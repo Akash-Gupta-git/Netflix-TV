@@ -1,14 +1,22 @@
  let ms = document.querySelector("#mouse")
 
+   var timeOut;
+    ms.style.display = "none";
     let wind = window.document.addEventListener("mousemove", (myfunction) => {
         let x = myfunction.pageX;
         let y = myfunction.pageY;
         ms.style.top = y + "px";
         ms.style.left = x + "px";
 
+       function mouseStopped() {
+            ms.style.display = "none";
+        } timeOut = setTimeout(mouseStopped, 1000);
 
-      
     });
+      document.addEventListener("mouseout",() => {
+        ms.style.display = "none";
+    });
+
 
         let TextHead = document.querySelector("#bigImgText")
         let head = document.querySelector(".head")
