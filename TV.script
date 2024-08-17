@@ -15,13 +15,5 @@
     });
       document.addEventListener("mouseout",() => {
         ms.style.display = "none";
-    });
-
-
-        let TextHead = document.querySelector("#bigImgText")
-        let head = document.querySelector(".head")
-        let para = document.querySelector(".para")
-        
-
-        
+    });   
 
