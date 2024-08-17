@@ -1,0 +1,19 @@
+ let ms = document.querySelector("#mouse")
+
+    let wind = window.document.addEventListener("mousemove", (myfunction) => {
+        let x = myfunction.pageX;
+        let y = myfunction.pageY;
+        ms.style.top = y + "px";
+        ms.style.left = x + "px";
+
+
+      
+    });
+
+        let TextHead = document.querySelector("#bigImgText")
+        let head = document.querySelector(".head")
+        let para = document.querySelector(".para")
+        
+
+        
+
