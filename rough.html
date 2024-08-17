@@ -19,38 +19,35 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #000;
             
         }
         #img {
             width: 100%;
-            height: 100%;
+           
+            position: absolute;
         }
         #video-box-container {
             /* background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"); */
               width: 110vw;
-            
             height: 100vh;
-            
             z-index: -1; 
             display: flex;
             justify-content: center;
-            align-items: center;
-            background: linear-gradient(rgb(80, 81, 82), rgb(15, 15, 15)); */
-         
-            
+            align-items: center;        
         }
         #video-box {
-            width: 72vw;
-            height: 41vw;
-            z-index: -1;
-           margin: 0vw 1vw 2.5vw 0vw;
+            
+            width: 75vw;
+            height: 42vw;
+           margin: 0vw 1vw 3.5vw 0vw;
             display: flex;
             background-color: rgb(223, 212, 166);
             background-size: cover;
             position: absolute;
-           
+            z-index: -1;
             background-image: url("https://imgs.search.brave.com/5fjjllNhqSPA30th1FUGfD8A7QV2gr9FHy89CRD8M70/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90aW1l/c25leHQuY29tL2Nv/bnRlbnQvaW1hZ2Vz/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzA0L01pcnphcHVy/LmpwZw");
-            border: 2px solid rgb(99, 97, 97);  
+            border: 2px solid rgb(15, 15, 15);  
             border-bottom: 1vw solid rgb(99,97,97); 
         }
         #icon-container {
@@ -62,24 +59,19 @@
             box-shadow: inset 10px 10px 150px 0px black; 
             background-color: transparent;
             animation: colorNav ;
-            /* overflow: hidden; */
-            /* background-color: greenyellow; */
         }
         #icon {
             width: 100%;
             height: 100%;
             margin-left: 1%;
-            /* padding: 50px 0px; */
             display: flex;
             font-size: 12px;
             justify-content: space-around;
             align-items: center;
             flex-direction: column;
-            color: white;
-            
+            color: white;     
             background-color: rgb(51, 50, 50);
             animation : navbar 5s linear infinite alternate ;
-            /* animation-delay: 10s; */
             transition: transform 1s;
             overflow: hidden;
         }
@@ -110,9 +102,7 @@
                 width: 0%;
             }
         }
-        #icon fa-tv-retro {
-            border: 2px solid green;
-        }
+       
         #navbarHomeBox {
             width: 100%;
             height: 20%;
@@ -136,7 +126,6 @@
         #img-slider {
             width: 70%;
             height: 100%;
-            /* z-index: -1; */
             background-color: transparent;
             background-repeat: no-repeat;
             background-size: 100% 100%;
@@ -178,12 +167,8 @@
             font-size: 2vw;
             margin-left: 0.2vw;
             color: white;
-            /* position: absolute; */
             justify-content: left;
         }
-        
-        
-        
         #downImgContainer-container {
            
             width: 100%;
@@ -194,22 +179,19 @@
             place-items: center;
             overflow: hidden;
             align-content: flex-start;
-            /* align-items: end; */
+           
             
         
             position: absolute;
             bottom: 0;
-            /* padding: 1%; */
+         
             
         }
         .downImgContainer
-        {
-           
+        {       
             display: flex;
-            width: calc(8% *20);
-            
-            animation: stepScroll 10s linear infinite;
-                  
+            width: calc(8% *20);       
+            animation: stepScroll 10s linear infinite;             
         }
         @keyframes stepScroll {
             0% {
@@ -218,30 +200,26 @@
             } 15% {
                 margin-left: 0%;
             } 20% {
-                margin-left: -11%;
+                margin-left: -10%;
             } 34% {
-                margin-left: -11%;
+                margin-left: -10%;
             } 40% {
-                margin-left: -22.2%;
+                margin-left: -20%;
             } 55% {
-                margin-left: -22.2%;
+                margin-left: -20%;
             } 60% {
-                margin-left: -33.5%;
+                margin-left: -30%;
             } 75% {
-                margin-left: -33.5%;
+                margin-left: -30%;
             } 80% {
-                margin-left: -44%;
+                margin-left: -40%;
             } 100% {
-                margin-left: -44%;
+                margin-left: -40%;
             }
-        }
-
-       
-        .Small-img {
-            
+        }  
+        .Small-img {     
             width: 12vw;
-            height: 45%;
-            
+            height: 45%;  
             padding: 0.1vw;
             display: flex;
             align-items: center;
@@ -249,12 +227,11 @@
             
         }
         .img-s {
-            
-            width: 100%;
-            
+            width: 100%; 
             height: 100%;
             transition: transform 1s;
         }
+            
         #text {
             width: 100%;
             height: 100%;
@@ -263,52 +240,33 @@
             color: white;
             font-weight: 900;
             display: flex;
-            /
-           
-            /* background-color: rgb(0, 255, 0); */
-
+         
         }
         #imgBorder {
             width: 12.1vw;
             height: 8.2vw;
             z-index: 2; 
             margin-right: 43.8vw;
-            /* margin-bottom: 0.10vw; */
-            position: absolute;
-            /* position: fixed; */
+            margin-bottom: 1vw;
+            position: absolute;      
             border: 0.2vw solid rgb(244, 243, 248);
             border-radius: 0.2vw;
-            /* margin-top: 1.6vw; */
-            /* margin: 0vw 1vw 2.5vw 0vw; */
-           
-            
-           
-         
-            
-         
-            
+      
         }
         span {
             display: grid;
-            /* background-color: #ffd700; */
-            margin-left: 7.9vw;
-            
+            margin-left: 9.4vw;   
             animation: spanUP 10s linear infinite;
         }
         @keyframes spanUP { 
             0% {
                 margin-top: 8%;
-                
             } 5% {
                 margin-top: 8%;
-                
             } 10% {
                 margin-top: 0%;
-            
+            }
         }
-
-    }
-
         #mouse {
             width: 1vw;
             height: 1vw;
@@ -357,33 +315,24 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
             animation: textChange 10s linear infinite;;
         }
-        @keyframes textChange {
-            0% {
-                margin
-            }
-            
-        }
-
+    
 
 
     </style>
 </head>
 <body> <div id="mouse"></div>
-    <img id="img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
     <div id="video-box-container">
-
-
-
-
+            <img id="img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png">
+        
+        
+        
+        
         <div id="video-box">
             <div id="icon-container">
                 <div id="icon-container icon-container-copy"></div>
-                <div id="icon">
-                    
+                <div id="icon">        
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <div id="navbarHomeBox"><i class="fa-solid fa-house"></i></div>
-                   
-                  
+                    <div id="navbarHomeBox"><i class="fa-solid fa-house"></i></div>  
                     <i class="fa-solid fa-clapperboard"></i>
                     <i class="fa-solid fa-calendar-days"></i>
                 </div>
@@ -410,23 +359,15 @@
                     <div onclick="slideImage" class="Small-img"><img class="img-s" src="https://imgs.search.brave.com/5fjjllNhqSPA30th1FUGfD8A7QV2gr9FHy89CRD8M70/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90aW1l/c25leHQuY29tL2Nv/bnRlbnQvaW1hZ2Vz/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzA0L01pcnphcHVy/LmpwZw"></div>
                     <div onclick="slideImage" class="Small-img"><img class="img-s" src="https://imgs.search.brave.com/_gg7bMyPmD_QYFLpt6zXEiQYMj_1DlSrTef4Lmo207E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93cC5z/Y29vcHdob29wLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAx/OS8wNS81Y2M0M2Iw/YWQwYWEzODY3NmFh/OWUyNWRfOGZjOTEy/NmQtYTcyMS00M2My/LWJhZmQtMDZmZGRh/MjEyMjAwLmpwZw"></div>
                     <div onclick="slideImage" class="Small-img"><img class="img-s" src="https://imgs.search.brave.com/tF2-COIT3sc5kaNDTYmY8kPXoPU9YFQ6J_ZXEho7nfE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90aW1l/c25leHQuY29tL2Nv/bnRlbnQvaW1hZ2Vz/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzA0L1NlbGVjdGlv/bi1EYXktd2ViLXNl/cmllcy1pbmRpYS5q/cGc"></div>
-                    <div onclick="slideImage" class="Small-img"><img class="img-s" src="https://imgs.search.brave.com/XUr0NrTiyqQMcp-OzbtK_ifyItpIL8HdeWxH08mzm1w/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaW5kaWFuZXhw/cmVzcy5jb20vMjAy/MC8xMi9SZXdpbmQt/MjAyMC5qcGc_dz02/NDA"></div>
+                    <div onclick="slideImage" class="Small-img"><img class="img-s" src="https://imgs.search.brave.com/4pV4ekk6APBL4QatFGhYli4C4lXC__ryaaWozUm_l6A/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuamF2YXRwb2lu/dC5jb20vYmVzdC9p/bWFnZXMvYmVzdC13/ZWItc2VyaWVzLW9u/LW5ldGZsaXg1LnBu/Zw"></div>
                     <div onclick="slideImage" class="Small-img"><img class="img-s" src="https://imgs.search.brave.com/hzQ4LIqTmtGKDAB2xEyaukKU7-N9CVhtuMrYIhU26Gk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90aW1l/c25leHQuY29tL2Nv/bnRlbnQvaW1hZ2Vz/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzA0L01hZGUtaW4t/SGVhdmVuLmpwZw"></div>
                     <div onclick="slideImage" class="Small-img"><img class="img-s" src="https://imgs.search.brave.com/r_Nw0xyviPl5Ypi65KEvA2SeVXFtN_h0uRKvMrbK14k/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90aW1l/c25leHQuY29tL2Nv/bnRlbnQvaW1hZ2Vz/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzA0L1N0YXItQm95/ei13ZWItc2VyaWVz/LWhpbmRpLmpwZw"></div>
-                   
-                    
+                    <div onclick="slideImage" class="Small-img"><img class="img-s" src="https://imgs.search.brave.com/XUr0NrTiyqQMcp-OzbtK_ifyItpIL8HdeWxH08mzm1w/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaW5kaWFuZXhw/cmVzcy5jb20vMjAy/MC8xMi9SZXdpbmQt/MjAyMC5qcGc_dz02/NDA"></div>
+             
                 </div>
             </span>
-            
             </div>
-
-
         </div>
-
-
-
-
-
     </div>
 
 
@@ -455,12 +396,6 @@
     document.addEventListener("mouseout",() => {
         ms.style.display = "none";
     });
-
-        
-        let TextHead = document.querySelector("#bigImgText")
-        let head = document.querySelector(".head")
-        let para = document.querySelector(".para")
-        
 
         
 
